@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --gayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-gray);
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    height: 480px;
+    width: 300px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.qr-img {
+    height: 270px;
+    width: 270px;
+    margin: 15px;
+    border-radius: 3%;
+}
+
+.text {
+    margin: 15px;
+}
+
+.text1 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.text2 {
+    color: var(--gayish-blue);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 79%;
+        padding: 10px 5px;
+    }
+
+    .card {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .qr-img {
+        margin: 1px;
+        width: 95%;
+        height: 50%;
+    }
+}
+
+
+
